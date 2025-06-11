@@ -1,0 +1,138 @@
+:root {
+    --light-purple: #E0BBE4; /* Um roxo bem clarinho */
+    --medium-purple: #957DAD; /* Um roxo um pouco mais escuro para detalhes */
+    --dark-purple: #6A5B7B; /* Um roxo mais escuro para texto */
+    --white: #FFFFFF;
+    --off-white: #F8F8F8;
+    --light-gray: #CCCCCC;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--off-white);
+    color: var(--dark-purple);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+}
+
+h1, h2 {
+    color: var(--medium-purple);
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Formulário */
+#bookForm {
+    background-color: var(--light-purple);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--dark-purple);
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="date"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid var(--medium-purple);
+    border-radius: 5px;
+    background-color: var(--white);
+    color: var(--dark-purple);
+}
+
+button {
+    background-color: var(--medium-purple);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: var(--dark-purple);
+}
+
+#cancelEditButton {
+    background-color: var(--light-gray);
+    color: var(--dark-purple);
+}
+
+#cancelEditButton:hover {
+    background-color: #B0B0B0;
+}
+
+/* Lista de Livros (Tabela) */
+.book-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.book-list th,
+.book-list td {
+    border: 1px solid var(--light-purple);
+    padding: 12px;
+    text-align: left;
+    color: var(--dark-purple);
+}
+
+.book-list th {
+    background-color: var(--medium-purple);
+    color: var(--white);
+    font-weight: bold;
+}
+
+.book-list tr:nth-child(even) {
+    background-color: var(--off-white);
+}
+
+.book-list td button {
+    padding: 6px 10px;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.book-list td button.edit-btn {
+    background-color: #4CAF50; /* Verde para editar */
+}
+
+.book-list td button.edit-btn:hover {
+    background-color: #45a049;
+}
+
+.book-list td button.delete-btn {
+    background-color: #F44336; /* Vermelho para deletar */
+}
+
+.book-list td button.delete-btn:hover {
+    background-color: #da190b;
+}

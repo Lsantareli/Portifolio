@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Portfólio</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#projects" class="nav-link">Projetos</a></li>
+                <li><a href="#contact" class="nav-link">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home -->
+        <section id="home" class="section">
+            <div class="container">
+                <div class="home">
+                    <div class="profile-img"><img src="img/img1.jpeg" alt=""></div>
+                    <h1>Lorena Santareli</h1>
+                    <p>Estudante, cursando o 5º semestre. Aprendizado focado em desenvolvimento web com foco em experiência do usuário e código limpo. Sempre em busca de novos desafios e oportunidades para crescer profissionalmente.</p>
+                    <a href="#projects" class="cta-button">Ver Meus Projetos</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="projects">
+                    <h2>Meus Projetos</h2>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <h3>Calculadora</h3>
+                            <p>Projeto inicial de estudos de JavaScript, calculadora com funções simples.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="Calculadora/calculadora.html" class="project-link">Ver Demo</a>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card">
+                            <h3>Crud Simples</h3>
+                            <p>Crud para organizar leituras anuais.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Html</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="Crud_Livros/Livros.html" class="project-link">Ver Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="contact">
+                    <h2>Entre em Contato</h2>
+                    <div class="contact-content">
+                        <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; margin-bottom: 2rem;">
+                            Entre em contato comigo através dos canais abaixo:
+                        </p>
+                        <div class="contatct-itens">
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="contact-icon">📧</div>
+                                <h3>Email</h3>
+                                <p><a href="mailto:lorenasantareli.09@gmail.com">lorenasantareli.09@gmail.com</a></p>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">💼</div>
+                                <h3>LinkedIn</h3>
+                                <p><a href="https://www.linkedin.com/in/lorena-santareli-b24a21267/" target="_blank">linkedin.com</a></p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

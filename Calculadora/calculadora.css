@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0; /* Um branco acinzentado suave para o fundo */
+    font-family: 'Arial', sans-serif;
+}
+
+.calculator {
+    border: 1px solid #7B68EE; /* Roxo claro */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    background-color: #FFFFFF; /* Fundo da calculadora branco puro */
+    overflow: hidden; /* Garante que os cantos arredondados funcionem */
+}
+
+.calculator-screen {
+    width: calc(100% - 20px); /* Largura total menos o padding */
+    height: 60px;
+    background-color: #E6E6FA; /* Roxo lavanda para a tela */
+    border: none;
+    font-size: 2em;
+    text-align: right;
+    padding: 10px;
+    color: #4B0082; /* Roxo escuro para o texto da tela */
+    border-bottom: 1px solid #7B68EE; /* Borda inferior roxa */
+}
+
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px; /* Pequeno espaçamento entre os botões */
+    padding-top: 1px; /* Ajuste para o espaçamento */
+}
+
+.calculator-buttons button {
+    padding: 20px;
+    font-size: 1.2em;
+    border: none;
+    background-color: #F8F8FF; /* Branco fantasma para botões numéricos */
+    color: #4B0082; /* Roxo escuro para texto dos botões */
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.calculator-buttons button:hover {
+    background-color: #E0E0FF; /* Roxo claro para hover */
+}
+
+.operator {
+    background-color: #9370DB; /* Roxo médio para operadores */
+    color: #FFFFFF; /* Texto branco para operadores */
+}
+
+.operator:hover {
+    background-color: #8A2BE2; /* Roxo azulado para hover do operador */
+}
+
+.all-clear {
+    background-color: #DA70D6; /* Orquídea para o botão AC */
+    color: #FFFFFF;
+}
+
+.all-clear:hover {
+    background-color: #BA55D3; /* Roxo médio para hover do AC */
+}
+
+.equal-sign {
+    background-color: #8A2BE2; /* Roxo azulado para o sinal de igual */
+    grid-column: span 2; /* Ocupa 2 colunas */
+    color: #FFFFFF;
+}
+
+.equal-sign:hover {
+    background-color: #6A5ACD; /* Roxo ardósia escuro para hover do igual */
+}
